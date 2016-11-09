@@ -1,0 +1,19 @@
+Human face detection by Boosting techniques:
+
+The main part of the project is written in C++ code. I also used Python PIL module to split image
+and draw rectangles in pictures. Here is a brif description of code file
+
+1. "get_rec.py": python code for drawing rectangles on human face. need prediction data from
+   Boosting.
+
+2. "img2txt.py": python code for transforming "bmp" file into np.array and store in a txt file
+
+3. "ROC.py": python code for drawing ROC curve for Boosting predictions
+
+4. "split.py": python code for split background image into 16*16 size image as "hard-negative" samples
+
+5. "main.cpp": main function for cpp code, also including testing function for human face detection.
+
+6. "load.h": cpp code for data loading, classifier initialization, finding threshold and prediction
+
+7 "global.h": cpp code for global variables: training size, testing size
